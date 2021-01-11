@@ -53,3 +53,6 @@
 *** x = abcdefghijklmnopqrstuvwxyz
 *** x[3:] = defghijklmnopqrstuvwxyz (All letters after the third letter)
 *** x[:3] = abc (first three letters)
+
+
+**Google SRE Book Notes
