@@ -40,3 +40,11 @@
 *** \Z returns a match if the specified characters are at the end of the string "Spain\Z"
 ** Sets
 *** A set of characters inside a pair of square brackets [] with a special meaning
+*** [arn] returns a match where one of the specified characters (a, r, or n) are present
+*** [a-n] returns a match for any lower case character, alphabetically between a and n
+*** [^arn] returns a match for any character EXCEPT a, r, and n
+*** [0123] returns a match where any of the specified digits (0,1,2, or 3) are present
+*** [0-9] returns a match for any digit between 0 and 9
+*** [0-5][0-9] returns a match for any two-digit numbers from 00 and 59
+*** [a-zA-Z] returns a match for any character alphabetically between a and z, lowercase or uppercase
+*** [+] in sets, +, *, ., |, (), $, {} has no special meaning, so [+] means: return a match for any + character in the string
