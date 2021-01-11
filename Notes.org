@@ -1,0 +1,42 @@
+
+* Python Notes
+
+** Json Loads will convert a string into a dictionary
+** Json Dumps will convert a dictionary back to a string
+*** In Json Dumps you can use the indent param to make strings look prettier
+
+** API Status Codes
+*** 200 Everything went great
+*** 301 server is redirecting to a different endpoint
+*** 400 Server thinks it was a bad request
+*** 401 Server thinks you are not authenticated
+*** 403 Resource attempting to be accessed is forbidden, missing correct permissions
+*** 404 Resource was not found on server
+*** 503 Server is not ready to handle the request
+
+** Python RegEx
+*** [] A set of characters (find characters a-m) [a-m]
+***  \ Signals a special sequence (can also be used to escape special characters) "\d"
+***  . Any character (except newline) "he..o"
+**** Above "he..o" will search for a sequence that starts with he, followed by two (any) characters, and an o
+***  ^ Starts with "^hello"
+***  $ Ends with "world$"
+***  * zero or more occurences "aix*"
+***  + One or more occurences "aix+"
+*** {} Exactly the specified number of accurances "al{2}"
+***  | Either or "falls|stays"
+*** () Capture and Group
+** Special Sequences 
+*** Is a \ followed by one of the following characters
+*** \A returns a match if hte specified characters are at the beggining of the string "\AThe"
+*** \b returns a match where the specified characters are at the beginning or at the end of a word (the "r" in beginning is making sure that the string is being treated as a raw string) r"\bain"
+*** \B returns a match where the specified characters are present, but NOT at the beginning (or at the end) of a word r"\Bain"
+*** \d returns a match where the string contains digits (numbers from 0-9) "\d"
+*** \D returns a match where the string DOES NOT contain digits "\D"
+*** \s returns a match where the string contains a white space character "\s"
+*** \S returns a match where the string DOES NOT contain a white space character "\S"
+*** \w returns a match where the string contains any word characters (characters ffrom a to Z, digits from 0-9, adn the underscore _ character) "\w"
+*** \W returns a match where the string DOES NOT contain any word characters "\W"
+*** \Z returns a match if the specified characters are at the end of the string "Spain\Z"
+** Sets
+*** A set of characters inside a pair of square brackets [] with a special meaning
